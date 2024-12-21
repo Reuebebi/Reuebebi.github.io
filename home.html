@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footballtea</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        ul{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+        .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+    </style>
+</head>
+<body>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <main>
+        <div class="navbar rounded">
+            <p class="h1- h6 ball" style="font-size: 50px; color: white;">Footballtea</p>
+            <button class="btn btn-light m-2">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </button>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="home.html">Home</a>
+            <a href="bundesliga.html">Bundesliga</a>
+            <a href="la liga.html">La Liga</a>
+            <a href="premier league.html">Premier League</a>
+        </div>
+        <div class="container-fluid mt-5 p-5 bg-danger text-white text-center rounded">
+            <p class="h1- h6">Bundesliga</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/800px-Bundesliga_logo_%282017%29.svg.png" width="100" height="100" class="mb-2 p-2 border border-light rounded"><br>
+            <a href="bundesliga.html" class="btn btn-light btn-outline-success rounded-pill">
+                Learn more
+            </a>
+        </div>
+        <div class="container-fluid mt-5 p-5 bg-info text-white text-center rounded">
+            <p class="h1- h6">Premier League</p>
+            <img src=".vscode/Premier_League_Logo.png" width="150" height="100" class="mb-2 p-2 bg-light border border-light rounded"><br>
+            <a href="premier league.html" class="btn btn-warning btn-outline-success rounded-pill">
+                Learn more
+            </a>
+        </div>
+        <div class="container-fluid mt-5 p-5 bg-primary text-white text-center rounded">
+            <p class="h1- h6">La Liga</p>
+            <img src=".vscode/La Liga.png" width="100" height="100" class="mb-2 p-2 bg-light border border-light rounded"><br>
+            <a href="la liga.html" class="btn btn-success btn-outline-light rounded-pill">
+                Learn more
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid bg-dark p-5 text-white border border-light rounded" style="justify-content: center; align-items: center; text-align: center;">
+        <ul style="list-style: none;">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="bundesliga.html">Bundesliga</a></li>
+            <li><a href="premier league.html">Premier League</a></li>
+            <li><a href="la liga.html">La Liga</a></li>
+        </ul> 
+          <a href="#" class="fa fa-facebook rounded-circle p-2"></a>
+          <a href="#" class="fa fa-twitter rounded-circle p-2"></a>
+          <a href="#" class="fa fa-youtube rounded-circle p-2"></a>
+          <a href="#" class="fa fa-instagram rounded-circle p-2"></a>
+        </div>
+    </footer>
+</body>
+</html>
