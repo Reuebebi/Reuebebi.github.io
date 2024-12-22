@@ -146,16 +146,6 @@ input[type=text]:focus {
 }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
- <script>
-$(document).ready(function(){
-  $("#search").on("keyup", function() {
-    var value = $(this).val().toLowerCase();
-    $("main * div").filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script> 
 </head>
 <body>
     <script>
@@ -190,6 +180,16 @@ $(document).ready(function(){
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search" id="search">
+        <button><i class="fa fa-search"></i></button>
+      </form>
+      <div class="results">
+          <ul>
+              <li>some content</li>
+              <li>some content</li>
+              <li>some content</li>
+              <li>some content</li>
+          </ul>
+      </div>
     </div>
   </div>
 </nav> 
