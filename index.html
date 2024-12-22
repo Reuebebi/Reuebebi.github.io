@@ -181,75 +181,25 @@ input[type=text]:focus {
     </div>
   </div>
 </nav> 
-          <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('bundesliga')"> Bundesliga</button>
-          <button class="btn" onclick="filterSelection('premier league')"> Premier League</button>
-          <button class="btn" onclick="filterSelection('la liga')"> La Liga</button>
-        </div>
-        <script>
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-        <div class="container-fluid mt-5 p-2 bg-dark text-white text-center rounded border border-light">
+    <div class="container-fluid mt-5 p-2 bg-dark text-white text-center rounded border border-light">
             <img src="ronaldo.jpeg" id="img" aria-labelledby="label" alt="" class="container-fluid">
             <div class="container-fluid" id="label">Explore football leagues and clubs.</div>
         </div>
-        <div class="container-fluid mt-5 p-5 bg-danger text-white text-center filterDiv bundesliga rounded">
+        <div class="container-fluid mt-5 p-5 bg-danger text-white text-center rounded">
             <p class="h1- h6">Bundesliga</p>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Bundesliga_logo_%282017%29.svg/800px-Bundesliga_logo_%282017%29.svg.png" width="100" height="100" class="mb-2 p-2 border border-light rounded"><br>
             <a href="bundesliga.html" class="btn btn-light btn-outline-success rounded-pill">
                 Learn more
             </a>
         </div>
-        <div class="container-fluid mt-5 p-5 bg-info text-white text-center filterDiv premier league rounded">
+        <div class="container-fluid mt-5 p-5 bg-info text-white text-center rounded">
             <p class="h1- h6">Premier League</p>
             <img src="Premier_League_Logo.png" width="150" height="100" class="mb-2 p-2 bg-light border border-light rounded"><br>
             <a href="premier league.html" class="btn btn-warning btn-outline-success rounded-pill">
                 Learn more
             </a>
         </div>
-        <div class="container-fluid mt-5 p-5 bg-primary text-white text-center filterDiv la liga rounded">
+        <div class="container-fluid mt-5 p-5 bg-primary text-white text-center rounded">
             <p class="h1- h6">La Liga</p>
             <img src="La Liga.png" width="100" height="100" class="mb-2 p-2 bg-light border border-light rounded"><br>
             <a href="la liga.html" class="btn btn-success btn-outline-light rounded-pill">
