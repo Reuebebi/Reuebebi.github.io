@@ -150,7 +150,7 @@ input[type=text]:focus {
 $(document).ready(function(){
   $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("main *").filter(function() {
+    $("main * div").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
