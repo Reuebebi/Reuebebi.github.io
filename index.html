@@ -148,16 +148,16 @@
 }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
+ <script>
 $(document).ready(function(){
   $("#search").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $m("main").filter(function() {
+    $("main div").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
 });
-</script>
+</script> 
 </head>
 <body>
     <script>
