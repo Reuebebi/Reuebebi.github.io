@@ -213,12 +213,6 @@ input[type=text]:focus {
         <li class="nav-item">
           <a class="nav-link" href="premier league.html">Premier League</a>
         </li>
-        <li>
-         <div class="autocomplete-container">
-            <input id="autocomplete-input" type="text" placeholder="Search..." />
-            <div id="autocomplete-list" class="autocomplete-items"></div>
-         </div>
-        </li>
         <script>
             const items = [
     "bundesliga",
@@ -262,6 +256,10 @@ document.addEventListener('click', function(e) {
     </div>
   </div>
 </nav> 
+     <div class="autocomplete-container">
+            <input id="autocomplete-input" type="text" placeholder="Search..." />
+            <div id="autocomplete-list" class="autocomplete-items"></div>      
+     </div>
     <div class="container-fluid mt-5 p-2 bg-dark text-white text-center rounded border border-light">
             <img src="ronaldo.jpeg" id="img" aria-labelledby="label" alt="" class="container-fluid">
             <div class="container-fluid" id="label">Explore football leagues and clubs.</div>
