@@ -206,14 +206,31 @@ function closeNav() {
             <input id="autocomplete-input" type="text" placeholder="Search..." />
             <div id="autocomplete-list" class="autocomplete-items"></div>      
      </div>
-      <script>
-            const items = [
-    "bundesliga",
-    "bundesliga table",
-    "premier league",
-    "premier league table",
-    "la liga",
-    "la liga table",
+      const items = [
+    "Apple",
+    "Banana",
+    "Cherry",
+    "Date",
+    "Elderberry",
+    "Fig",
+    "Grape",
+    "Honeydew",
+    "Kiwi",
+    "Lemon",
+    "Mango",
+    "Nectarine",
+    "Orange",
+    "Papaya",
+    "Quince",
+    "Raspberry",
+    "Strawberry",
+    "Tangerine",
+    "Ugli fruit",
+    "Vanilla",
+    "Watermelon",
+    "Xigua",
+    "Yellow passion fruit",
+    "Zucchini"
 ];
 
 document.getElementById('autocomplete-input').addEventListener('input', function() {
@@ -244,7 +261,6 @@ document.addEventListener('click', function(e) {
         autocompleteList.innerHTML = '';
     }
 });
-        </script>
     <div class="container-fluid mt-5 p-2 bg-dark text-white text-center rounded border border-light">
             <img src="ronaldo.jpeg" id="img" aria-labelledby="label" alt="" class="container-fluid">
             <div class="container-fluid" id="label">Explore football leagues and clubs.</div>
