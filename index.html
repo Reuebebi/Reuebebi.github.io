@@ -173,12 +173,13 @@ input[type=text]:focus {
 .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
-    background-color: #fff;
+    color: black;
+    background-color: white;
     border-bottom: 1px solid #ccc;
 }
 
 .autocomplete-items div:hover {
-    background-color: #e9e9e9;
+    background-color: navy;
 }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -207,30 +208,12 @@ function closeNav() {
             <div id="autocomplete-list" class="autocomplete-items"></div>      
      </div>
       const items = [
-    "Apple",
-    "Banana",
-    "Cherry",
-    "Date",
-    "Elderberry",
-    "Fig",
-    "Grape",
-    "Honeydew",
-    "Kiwi",
-    "Lemon",
-    "Mango",
-    "Nectarine",
-    "Orange",
-    "Papaya",
-    "Quince",
-    "Raspberry",
-    "Strawberry",
-    "Tangerine",
-    "Ugli fruit",
-    "Vanilla",
-    "Watermelon",
-    "Xigua",
-    "Yellow passion fruit",
-    "Zucchini"
+    "Bundesliga",
+    "Bundesliga tagble",
+    "Premier league",
+    "Premier league table",
+    "La liga",
+    "La liga table"
 ];
 
 document.getElementById('autocomplete-input').addEventListener('input', function() {
