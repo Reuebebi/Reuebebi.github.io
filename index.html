@@ -184,39 +184,24 @@ input[type=text]:focus {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "100%";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
-    </script>
-     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html" class="h1-.h6 ball">Footballtea</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="bundesliga.html">Bundesliga</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="la liga.html">La Liga</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="premier league.html">Premier League</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav> 
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home.html">Home</a>
+  <a href="bundesliga.html">Bundesliga</a>
+  <a href="la liga.html">La Liga</a>
+  <a href="premier league.html">Premier League</a>
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
      <div class="autocomplete-container mt-5">
             <input id="autocomplete-input" type="text" placeholder="Search..." />
             <div id="autocomplete-list" class="autocomplete-items"></div>      
